@@ -21,15 +21,15 @@ public class NumberWizard : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.DownArrow))
+        if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            print("użytkownik nacisnął dolną strzałkę");
+           
             min = guess;
             guess = (min + max) / 2;
             print("Czy twoja liczba jest mniejsza lub większa niż" + guess);
         }
             
-        if (Input.GetKeyDown(KeyCode.UpArrow)) 
+        if (Input.GetKeyDown(KeyCode.DownArrow)) 
             {
             max = guess;
             guess = (min + min) / 2; ;
